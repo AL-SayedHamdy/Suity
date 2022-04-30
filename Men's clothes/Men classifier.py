@@ -3,21 +3,17 @@ import os,cv2
 import random
 import numpy as np
 import matplotlib.pyplot as plt
-import tensorflow as tf
 from tensorflow import keras
 from keras.preprocessing.image import ImageDataGenerator
-from torchvision import transforms
 from tensorflow.keras import layers
 from sklearn.model_selection import train_test_split
 from tensorflow.keras.optimizers import SGD
 from tensorflow.keras.layers.experimental import preprocessing
 from keras.models import Sequential
-from keras.wrappers.scikit_learn import KerasClassifier
-from sklearn.model_selection import GridSearchCV
 from keras.layers import Conv2D, MaxPooling2D, Flatten, Dense, Dropout
 
 #importing_the_data
-data_dir = os.path.join('F:/Work/Projects/Graduation project/Clothes classifier/Data/Men')
+data_dir = os.path.join('../data directory/..')
 
 categories = ['jackets_top_casual_men_clothes', 'jackets_top_formal_men_clothes',
               'jackets_top_sport_men_clothes','shirts_top_casual_men_clothes',

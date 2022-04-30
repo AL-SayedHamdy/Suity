@@ -2,22 +2,18 @@
 import os,cv2
 import random
 import numpy as np
-import pandas as pd
 import matplotlib.pyplot as plt
-import tensorflow as tf
 from tensorflow import keras
 from keras.preprocessing.image import ImageDataGenerator
 from tensorflow.keras import layers
 from sklearn.model_selection import train_test_split
-import joblib as joblib
 from keras.models import Sequential
 from tensorflow.keras.layers.experimental import preprocessing
-from tensorflow.keras import regularizers
 from tensorflow.keras.optimizers import SGD
-from keras.layers import Conv2D, Activation, MaxPooling2D, Flatten, Dense, Dropout, BatchNormalization
+from keras.layers import Conv2D, Activation, MaxPooling2D, Flatten, Dense, Dropout
 
 #Importing the data
-data_dir = os.path.join('F:/Work/Projects/Graduation project/Clothes classifier/Data/Women')
+data_dir = os.path.join('../data directory/..')
 
 categories = ['dresses_casual_women_clothes', 'evening_dresses_women_clothes',
               'jackets_top_sport_women_clothes','jens_bottom_casual_women_clothes',

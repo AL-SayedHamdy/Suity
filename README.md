@@ -60,5 +60,4 @@ Project is created with:
 
     dense_2 (Dense)              (None, 15)                7695 
     
-    ##Output
-    
+##Output

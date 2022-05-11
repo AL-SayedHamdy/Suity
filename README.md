@@ -60,4 +60,10 @@ Project is created with:
 
     dense_2 (Dense)              (None, 15)                7695 
     
-##Output
+## Output for men
+
+![Sample Output](https://github.com/AL-SayedHamdy/Men-and-women-clothes-classification/blob/main/Images/Men%20classefier.png)
+
+## Output for women
+
+![Sample Output](https://github.com/AL-SayedHamdy/Men-and-women-clothes-classification/blob/main/Images/Women%20classifier.png)

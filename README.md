@@ -46,11 +46,18 @@ Total params: 4,348,423
 Trainable params: 4,348,423
 Non-trainable params: 0
 
-    
-## Output for men
+##Men's classifier (loss and accuracy)
 
-![Sample Output](https://github.com/AL-SayedHamdy/Men-and-women-clothes-classification/blob/main/Images/Men%20classefier.png)
+![Model accuracy](https://github.com/AL-SayedHamdy/Suity/blob/main/Images/accuracy.png)
 
-## Output for women
+![Model loss](https://github.com/AL-SayedHamdy/Suity/blob/main/Images/Loss.png)
 
-![Sample Output](https://github.com/AL-SayedHamdy/Men-and-women-clothes-classification/blob/main/Images/Women%20classifier.png)
+##Women's classifier
+
+![Model accuracy](https://github.com/AL-SayedHamdy/Suity/blob/main/Images/Accuracy%20women.png)
+
+![Model loss](https://github.com/AL-SayedHamdy/Suity/blob/main/Images/Loss%20women.png)
+
+##Sample of the output
+
+![Output](https://github.com/AL-SayedHamdy/Suity/blob/main/Images/Output.png)

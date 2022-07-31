@@ -1,8 +1,9 @@
-# Men's and women's clothes classification
-It's a clothes category classifier.
+# Sauty
+Clothes recommender system
 
 ## General info
-In this project, I made a classifier that will be able to classify the men's and women's clothes to 14 categories for men's clothes and 15 for women
+Suity is a clothes recommender system that depends on the clothes you will give him as input and every day, he will recommend an outfit that will fit you, depending on the weather and the style you like to wear.
+And this is the Artificial intelligence part of this application.
 
 ## Technologies
 Project is created with:
@@ -12,53 +13,39 @@ Project is created with:
 * scikit-learn version: '1.0.2'
 * OpenCV
 	
-## CNN Structures for the men classifier (Building a model on my own)
+## CNN Structures for the deep learning classification model
 
 ----------------------------------------------------------------
-        Layer (type)               Output Shape         Param 
+	Layer (type)                 Output Shape              Param #   
 
-    conv2d_1 (Conv2D)            (None, 47, 47, 64)        1088      
+	conv2d_1 (Conv2D)            (None, 48, 48, 32)        320       
 
-    max_pooling2d_1 (MaxPooling2 (None, 23, 23, 64)        0         
+	max_pooling2d_1 (MaxPooling2 (None, 24, 24, 32)        0         
 
-    flatten_1 (Flatten)          (None, 33856)             0         
+	dropout_1 (Dropout)          (None, 24, 24, 32)        0         
 
-    dense_1 (Dense)              (None, 500)               16928500  
+	conv2d_2 (Conv2D)            (None, 22, 22, 64)        18496     
 
-    dropout_1 (Dropout)          (None, 500)               0         
+	max_pooling2d_2 (MaxPooling2 (None, 11, 11, 64)        0         
 
-    dense_2 (Dense)              (None, 14)                7014  
-    
-    
- 
-## CNN Structures for the women classifier (Building a model on my own)
+	dropout_2 (Dropout)          (None, 11, 11, 64)        0         
 
-----------------------------------------------------------------
-        Layer (type)               Output Shape         Param 
+	conv2d_3 (Conv2D)            (None, 8, 8, 128)         131200    
 
-    conv2d_1 (Conv2D)            (None, 49, 49, 32)        160       
+	dropout_3 (Dropout)          (None, 8, 8, 128)         0         
 
-    conv2d_2 (Conv2D)            (None, 48, 48, 32)        4128      
+	flatten_1 (Flatten)          (None, 8192)              0         
 
-    max_pooling2d_1 (MaxPooling2 (None, 24, 24, 32)        0         
+	dense_1 (Dense)              (None, 512)               4194816   
 
-    dropout_1 (Dropout)          (None, 24, 24, 32)        0         
+	dropout_4 (Dropout)          (None, 512)               0         
 
-    conv2d_3 (Conv2D)            (None, 22, 22, 64)        18496     
+	dense_2 (Dense)              (None, 7)                 3591      
 
-    conv2d_4 (Conv2D)            (None, 20, 20, 64)        36928     
+Total params: 4,348,423
+Trainable params: 4,348,423
+Non-trainable params: 0
 
-    max_pooling2d_2 (MaxPooling2 (None, 10, 10, 64)        0         
-
-    dropout_2 (Dropout)          (None, 10, 10, 64)        0         
-
-    flatten_1 (Flatten)          (None, 6400)              0         
-
-    dense_1 (Dense)              (None, 512)               3277312   
-
-    dropout_3 (Dropout)          (None, 512)               0         
-
-    dense_2 (Dense)              (None, 15)                7695 
     
 ## Output for men
 

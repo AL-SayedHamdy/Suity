@@ -42,22 +42,18 @@ Project is created with:
 
 	dense_2 (Dense)              (None, 7)                 3591      
 
-Total params: 4,348,423
-Trainable params: 4,348,423
-Non-trainable params: 0
-
-##Men's classifier (loss and accuracy)
+## Men's classifier (loss and accuracy)
 
 ![Model accuracy](https://github.com/AL-SayedHamdy/Suity/blob/main/Images/accuracy.png)
 
 ![Model loss](https://github.com/AL-SayedHamdy/Suity/blob/main/Images/Loss.png)
 
-##Women's classifier
+## Women's classifier
 
 ![Model accuracy](https://github.com/AL-SayedHamdy/Suity/blob/main/Images/Accuracy%20women.png)
 
 ![Model loss](https://github.com/AL-SayedHamdy/Suity/blob/main/Images/Loss%20women.png)
 
-##Sample of the output
+## Sample of the output
 
 ![Output](https://github.com/AL-SayedHamdy/Suity/blob/main/Images/Output.png)

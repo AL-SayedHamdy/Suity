@@ -11,7 +11,7 @@ from keras.callbacks import ModelCheckpoint, EarlyStopping
 from keras.preprocessing.image import ImageDataGenerator
 
 #Importing the data
-data_dir = os.path.join('F:/Work/Projects/Suity/Clothes object classifier/Data/Men')
+data_dir = os.path.join('..//data directory//..')
 
 categories = ['Foot wear', 'Jacket', 'Shirt', 'Shorts', 'Sweatshirt', 'Trousers', 'T-Shirt']
 
@@ -107,7 +107,7 @@ model.add(Dense(7, activation='softmax'))
 model.compile(optimizer='Adam', loss='sparse_categorical_crossentropy', metrics=['accuracy'])
 
 #Check point and early stopping
-checkpoint = ModelCheckpoint("men_classifier_up.h5", monitor='val_acc', verbose=1, save_best_only=True, save_weights_only=False, mode='auto', period=1)
+checkpoint = ModelCheckpoint("men_classifier.h5", monitor='val_acc', verbose=1, save_best_only=True, save_weights_only=False, mode='auto', period=1)
 
 early = EarlyStopping(monitor='val_acc', min_delta=0, patience=20, verbose=1, mode='auto')
 
@@ -133,12 +133,12 @@ plt.show()
 
 '''
 #Model save
-model.save('men_classifier_up.h5')
+model.save('men_classifier.h5')
 '''
 
 '''
 #Model load
-model = keras.models.load_model('F:/Work/Projects/Suity/Clothes object classifier/Men classifier/men_classifier_up.h5')
+model = keras.models.load_model('..//model position//..')
 '''
 
 #Test the model

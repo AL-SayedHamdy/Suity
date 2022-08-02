@@ -10,7 +10,7 @@ import numpy as np
 import sys
 
 # Load the model
-filepath = 'F:/Work/Projects/Suity/Clothes object classifier/Men classifier/men_classifier_up.h5'
+filepath = '..//model h5 position//..'
 model = load_model(filepath, compile = True)
 
 categories = ['Foot wear', 'Jacket', 'Shirt', 'Shorts', 'Sweatshirt', 'Trousers', 'T-Shirt']

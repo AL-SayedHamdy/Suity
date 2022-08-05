@@ -1,4 +1,4 @@
-# Sauty
+# Suity
 Clothes recommender system
 
 ## General info
